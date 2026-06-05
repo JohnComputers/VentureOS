@@ -1,0 +1,25 @@
+:root {
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: #06070e;
+  color: #e8ecff;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  -webkit-font-smoothing: antialiased;
+}
+@keyframes vspin { to { transform: rotate(360deg); } }
+::-webkit-scrollbar { width: 7px; height: 7px; }
+::-webkit-scrollbar-thumb { background: #2a3354; border-radius: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+button { font-family: inherit; }
+input, select, textarea { outline: none; }
+input::placeholder { color: #56608a; }
+code { font-family: "IBM Plex Mono", monospace; color: #9b7bff; }
+a { color: #46e6ff; }
+
+@media (max-width: 760px) {
+  .vos-grid { grid-template-columns: minmax(0, 1fr) !important; }
+}
